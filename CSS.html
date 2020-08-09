@@ -1,13 +1,25 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8">
         <style>
+            
             h1{
                 text-align:center;
                 font-size:40px;
             }
-            tr,td{
-                border:1px solid black;
+            tr,td
+            {
+                border-style:dotted;border-width:2px;
+                border-color:cyan;
+
+                border:dotted 2px cyan;
+            }
+            #toptable
+            {
+                border-width:4px;
+                text-align: center;
+                font-size:10px;
             }
         </style>
     </head>
@@ -24,12 +36,32 @@
             <br>
             <table>
                 <tr>
-                    <td>1행 1열</td>
-                    <td>1행 2열</td>
+                    <div id="toptable"><td>border(테두리 스타일)</td></div>
                 </tr>
                 <tr>
-                    <td>2행 1열</td>
-                    <td>2행 2열</td>
+                    <td>solid : 실선의 형태로 적용함</td>
+                    
+                </tr>
+                <tr>
+                    <td>dotted : 점선의 형태로 적용함</td>
+                </tr>
+                <tr>
+                    <td>double : 이중 선의 형태. 굵기가 3px 이상이 되어야 볼 수 있음</td>
+                </tr>
+                <tr>
+                    <td>groove : 입체적으로 선을 홈이 들어간 것처럼 보여줌, 최소 2px은 되어야 확인 가능</td>
+                </tr>
+                <tr>
+                    <td>ridge : groove와 비슷하지만, 음영 값이 반대라 선이 돌출되어 보임</td>
+                </tr>
+                <tr>
+                    <td> inset : 요소 전체가 안으로 들어가 보임</td>
+                </tr>
+                <tr>
+                    <td> outset : inset의 반대,요소 전체가 밖으로 돌출되어 보임</td>
+                </tr>
+                <tr>
+                    <td> inherit : 부모의 속성을 상속받음</td>
                 </tr>
             </table>
         </p>
